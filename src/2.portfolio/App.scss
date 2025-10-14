@@ -1,0 +1,418 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+  line-height: 60px;
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 10px rgb(113, 109, 109);
+
+  .logo {
+    h1 {
+      font-size: 35px;
+      color: black;
+      font-family: 'Times New Roman', Times, serif;
+    }
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+
+    .list {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+
+      li {
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+          font-family: 'Times New Roman', Times, serif;
+          transition: 0.3s;
+
+          &:hover {
+            color: teal;
+          }
+
+         
+        }
+      }
+    }
+    .list li:nth-child(3) a {
+      background-color: black;
+      color: white;
+      padding: 10px 20px 10px 20px;
+      border-radius: 10px;
+      font-size: 20px;
+      transition: 0.3s;
+
+      &:hover {
+        color: orange;
+      }
+    }
+
+    .checked {
+      display: none;
+        font-size: 30px;
+        color: black;
+        cursor: pointer;
+    }
+
+    #check {
+      display: none;
+    }
+  }
+}
+
+.typing {
+  margin: 20px auto;
+  width: 25ch;
+  font-weight: 600px;
+  font-size: 30px;
+  overflow: hidden;
+  color: orange;
+  white-space: nowrap;
+  border-right: 5px solid orange;
+  animation: typing 7s steps(25), blink 0.5s step-end infinite alternate;
+  animation-iteration-count: infinite;  
+  }
+
+
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background: linear-gradient(to right, #E9EBF1, #B6D5F5);
+  background-size: cover;
+  background-position: center;
+  color: black;
+  text-align: center;
+  flex-wrap: wrap;
+
+  .left {
+
+    width: 50%;
+  }
+  .left p{
+    padding: 0% 0px 20px 0px;
+    font-size: 15px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+  }
+  .left a{
+    height:auto;
+    width: auto;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.3s;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 10px;
+
+  &.rightbutton{
+      background-color: black;
+    }
+
+    &:hover {
+      color: orange;
+    }
+  &.leftbutton{
+      background-color: white;
+      color: black;
+      text-align: center;
+      padding: 10px 20px 10px 20px;
+    }
+    &:hover {
+      color: orange;
+    }
+     }
+  .left .social{
+    margin: 30px auto;
+    padding: 20px 20px 20px 20px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+
+    & :hover{
+      transform: scale(1.2);
+      
+    }
+  }
+
+  .rightt {
+    height: auto;
+    width: 50%;
+    
+
+    img {
+      height: 70%;
+      width: 80%;
+      padding: 30px 0 25px 0;
+      object-fit: cover;
+      border-radius: 60% 60% 60% 60%;
+    }
+  }
+}
+
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+.section2{
+  height: auto;
+  width: 100%;
+  background-color: white;
+  display: flex;
+
+  h1{
+    
+    padding: 20px;
+    font-family:sans-serif;
+  }
+
+  p{
+    font-size: 15px;
+    padding: 20px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 30px;
+
+    
+  }
+  .skills{
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    
+    
+
+    .skill{
+      width: 100%;
+      height: 100px;
+      margin: 0px 20px auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+  }
+  label{
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 600;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  input{
+    
+    height: 30px;
+    width: 50%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0 10px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  .box{
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10% 0 0% 0;
+    
+
+    .box1{
+
+      height: 200px;
+      width: 200px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+      text-align: center;
+      
+
+      i{
+        font-size: 80px;
+        color: white;
+        padding: 10px 0 0 30px;
+      }
+      h1{
+        font-size: 20px;
+        color: white;
+        padding: 10px 0 0 0px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+      }
+
+    }
+    .box2{
+
+      height: 200px;
+      width: 200px;
+      background-color: black;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+      i{
+        font-size: 80px;
+        color: white;
+        
+      }
+      h1{
+        font-size: 20px;
+        color: white;
+        padding: 10px 0 0 0px;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+      }
+    }
+  }
+
+  
+}
+
+
+@media screen and (max-width: 800px) {
+  .navbar {
+    .right {
+
+      .list {
+        flex-direction: column;
+        position: fixed;
+        top: 80px;
+        left: 100%;
+        width: 100%;
+        height: 100vh;
+        transition: all .5s;
+        background: white;
+        font-weight: 600;
+        padding: 0 10%;
+        
+        
+      }
+
+      .checked {
+        display: block;
+
+      }
+
+      #check:checked ~ .list {
+        left: 70%;
+        top: 10%;
+        
+    
+      }
+    }
+  }
+  .container{
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 20px;
+
+    
+
+    .rightt img{
+        width: 100%;
+        height: auto;
+        max-width: 350px;
+    }
+    .left {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  }
+
+
+
+  
+  .section2{
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+
+  
+    .skills{
+      width: 100%;
+      height: auto;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      p{
+        display: none;
+      }
+    }
+    input{
+      width: 50%;
+      margin-bottom: 20px;
+    }
+    .box{
+      width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      .box1{
+        width: 150px;
+        height: 150px;
+        
+        
+      }
+      .box2{
+        width: 150px;
+        height: 150px;
+      }
+    }
+  }
+}

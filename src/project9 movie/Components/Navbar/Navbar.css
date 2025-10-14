@@ -1,0 +1,39 @@
+.nav{
+    background: linear-gradient(90deg,#141414, rgba(20,20,20,0.85));
+    color: #fff;
+    height: 72px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+.nav .right h1{
+    margin: 0;
+    letter-spacing: 2px;
+}
+.left input{
+    height: 36px;
+    width: 320px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+}
+.left input::placeholder{ color: #ddd }
+
+@media (max-width: 600px){
+    .left input{ width: 140px }
+    .nav{ padding: 0 12px }
+    .nav .right h1{ font-size: 1rem }
+}
+
+@media (max-width: 380px){
+    .left input{ width: 110px }
+}

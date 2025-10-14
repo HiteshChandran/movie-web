@@ -1,0 +1,12 @@
+.person-page{ color:#fff; padding:20px; max-width:1100px; margin:0 auto }
+.person-hero{ display:flex; gap:18px; align-items:flex-start }
+.person-hero img{ width:280px; border-radius:8px }
+.person-info h1{ margin:0 0 6px 0 }
+.person-info .known{ color: #bbb; margin:4px 0 }
+.person-info .bio{ margin-top:12px; line-height:1.5 }
+.person-credits{ margin-top:20px }
+.credits-grid{ display:grid; grid-template-columns: repeat(auto-fill, minmax(150px,1fr)); gap:12px }
+.credit-card{ background: rgba(255,255,255,0.03); border-radius:8px; padding:8px; cursor:pointer }
+.credit-card img{ width:100%; height:auto; border-radius:6px }
+.credit-info{ padding-top:6px }
+.btn{ background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.08); padding:8px 12px; border-radius:6px }

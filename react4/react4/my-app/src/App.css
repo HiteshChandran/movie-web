@@ -1,0 +1,20 @@
+
+
+body {
+ 
+  background-color: #000000;
+}
+
+.row {
+  margin: 20px 0;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x:scroll; 
+  gap: 10px;
+  object-fit: cover;
+  padding: 10px;
+}
+
+

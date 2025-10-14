@@ -1,0 +1,32 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg:#0f0f0f;
+  --muted:#bfbfbf;
+  --accent:#e50914;
+}
+
+html,body,#root{ 
+  height:100% }
+body{
+   font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background: linear-gradient(180deg,#050506 0%, #0f0f10 100%); color:#fff; margin:0 }
+
+.row{ margin: 22px 0 }
+
+.scroll-container{
+   display:flex; gap:12px; overflow-x:auto; padding: 10px 
+  }
+
+h1{ 
+  color: #fff
+ }
+
+ h1:hover{
+  color: red;
+ }
+
+

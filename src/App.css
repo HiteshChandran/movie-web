@@ -1,0 +1,39 @@
+
+:root{
+  --bg:#070709;
+  --muted:#bfbfbf;
+  --accent:#ff3b3b;
+  --glass: rgba(255,255,255,0.04);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@600;800&display=swap');
+
+html,body,#root{ height:100% }
+body{
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background: radial-gradient(1200px 400px at 10% 10%, rgba(255,255,255,0.02), transparent), linear-gradient(180deg,#050506 0%, #0f0f10 100%);
+  color:#fff;
+  margin:0;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  overflow-x: hidden; /* prevent page-level horizontal scroll */
+}
+
+.app-container{ max-width: 1300px; margin: 0 auto; padding: 12px }
+
+.row{ margin: 28px 0 }
+
+.scroll-container{ display:flex; gap:12px; overflow-x:auto; padding-left: 12px; padding-right: 0; scroll-behavior: smooth }
+
+h1{ color: #fff; font-family: 'Montserrat', sans-serif }
+
+/* subtle page sections */
+.section-title{ font-family: 'Montserrat', sans-serif; letter-spacing: 0.6px; margin: 8px 0 12px }
+
+.row{ margin: 22px 0 }
+
+h1{ color: #fff }
+
+h1:hover{ color: red }
+
+

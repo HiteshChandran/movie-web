@@ -1,0 +1,106 @@
+.movie-page{
+	color: #fff;
+	padding: 0 20px 48px 20px;
+	display: block;
+}
+
+.movie-poster{
+	width: 360px;
+	border-radius: 8px;
+	box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+	
+}
+
+.movie-details{
+	max-width: 900px;
+}
+
+.movie-details h2{ margin-top: 0 }
+
+/* Hero */
+.hero{
+	position: relative;
+	background-image: var(--backdrop-image);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 48px 20px;
+	/* ensure hero covers visually while allowing content to flow */
+	min-height: 320px;
+	overflow: visible;
+	
+}
+
+.hero .overlay{
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	gap: 24px;
+	align-items: center; /* center poster and details vertically */
+}
+
+.hero .poster{
+	width: 320px;
+	max-width: 28%;
+	min-width: 160px;
+	height: auto;
+	border-radius: 8px;
+	object-fit: cover;
+	box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+}
+.hero .details{ color: #fff; max-width: 72% }
+.hero .tagline{ color: var(--muted); font-style: italic }
+.hero .meta{ color: var(--muted); margin: 8px 0 }
+.actions{ margin-top: 12px }
+.btn{ background: transparent; color: #fff; border: 1px solid rgba(255,255,255,0.12); padding: 8px 12px; border-radius: 6px; margin-right: 8px }
+.btn.primary{ background: var(--accent); border-color: var(--accent) }
+
+/* Trailer */
+.trailer-section{ padding: 24px 0 }
+.trailer-wrapper{ width: 100%; max-width: 980px; margin: 0 auto; aspect-ratio: 16/9; position: relative }
+
+/* Fallback for browsers without aspect-ratio: use padding-top trick */
+.trailer-wrapper::before{
+	content: '';
+	display: block;
+	padding-top: 56.25%; /* 16:9 */
+}
+.trailer-wrapper > iframe,
+.trailer-wrapper iframe,
+.trailer-wrapper > div > iframe{ /* react-youtube may wrap iframe in a div */
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+/* Cast */
+.cast-section{ padding: 28px 0; max-width: 1200px; margin: 0 auto }
+.cast-section h2{ margin-bottom: 16px }
+.cast-grid{ display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px }
+.cast-card{ background: rgba(255,255,255,0.03); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; align-items: center; padding: 8px; text-align: center }
+.cast-card img{ width: 100%; height: auto; border-radius: 6px }
+.cast-info{ padding: 8px 6px }
+.cast-name{ font-weight: 600; margin: 0; font-size: 0.95rem }
+.cast-character{ color: var(--muted); margin: 4px 0 0 0; font-size: 0.85rem }
+
+@media (max-width: 900px){
+	.hero .overlay{ flex-direction: column; align-items: center }
+	.hero .poster{ width: 60%; max-width: 360px }
+	.hero .details{ max-width: 100% }
+}
+
+@media (max-width: 520px){
+	.hero .overlay{ gap: 12px }
+	.hero .poster{ width: 70%; max-width: 260px }
+}
+
+@media (max-width: 520px){
+	.hero{ padding: 18px 12px }
+	.hero .poster{ width: 80% }
+	.trailer-wrapper{ aspect-ratio: 16/9 }
+	.cast-grid{ grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)) }
+	.cast-card{ padding: 6px }
+	.cast-name{ font-size: 0.9rem }
+}
