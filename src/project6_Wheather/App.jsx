@@ -1,12 +1,14 @@
+"use strict";
+
 import React, { useEffect, useState } from "react";
 import "./App.scss";
 
-import carVideo from "./assets/Cloudy.mp4";
-import rainVideo from "./assets/Rainy.mp4";
-import stormVideo from "./assets/storm.mp4";
-import snowVideo from "./assets/Snow.mp4";
-import hazeVideo from "./assets/Haze.mp4";
-import defaultVideo from "./assets/Earth.mp4";
+import carVideo from "../assets/Cloudy.mp4";
+import rainVideo from "../assets/Rainy.mp4";
+import stormVideo from "../assets/storm.mp4";
+import snowVideo from "../assets/Snow.mp4";
+import hazeVideo from "../assets/Haze.mp4";
+import defaultVideo from "../assets/Earth.mp4";
 
 const api = {
   baseUrl: "https://api.openweathermap.org/data/2.5/weather",
